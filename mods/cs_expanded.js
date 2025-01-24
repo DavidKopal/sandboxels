@@ -24,8 +24,10 @@ const menu = { // Just change the values in this.
 }
 
 
-if (langCode == reqCode) {
-	Object.keys(menu).forEach(key => {
-		document.getElementById(key).textContent = menu[key]
-	})
-}
+setTimeout(function(){
+	if (langCode == reqCode) {
+		Object.keys(menu).forEach(key => {
+			document.getElementById(key).textContent = menu[key]
+		})
+	}
+},0)
